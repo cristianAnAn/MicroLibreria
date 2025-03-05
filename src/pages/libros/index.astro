@@ -1,0 +1,10 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LibrosTable from '../../components/LibrosTable.vue';
+---
+<Layout title="Listado de Libros">
+  <main>
+    <h1>📚 Listado de Libros</h1>
+    <LibrosTable client:load />
+  </main>
+</Layout>

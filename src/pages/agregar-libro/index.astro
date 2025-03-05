@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import AddLibroForm from '../../components/AddLibroForm.vue';
+---
+<Layout title="Agregar Libro">
+  <main>
+    <h1>➕ Agregar Nuevo Libro</h1>
+    <AddLibroForm client:load />
+  </main>
+</Layout>
+<style>
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+</style>

@@ -1,0 +1,90 @@
+/* LibrosTable.css */
+.search-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #45a049;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+  }
+  
+  .autocomplete-list {
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .autocomplete-item {
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .autocomplete-item:hover,
+  .highlighted {
+    background-color: #f0fff4;
+    color: #2c662d;
+    font-weight: 500;
+  }
+  
+  .libros-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .libros-table th,
+  .libros-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .libros-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .libros-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .libros-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .loading {
+    color: #2196F3;
+    padding: 1rem;
+  }
+  
+  .error {
+    color: #f44336;
+    padding: 1rem;
+  }
+  
+  .no-data {
+    color: #9E9E9E;
+    padding: 1rem;
+  }

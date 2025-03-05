@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import AutoresTable from '../../components/AutoresTable.vue';
+---
+<Layout title="Listado de Autores">
+  <main class="autores-container">
+    <h1>📚 Autores Registrados</h1>
+    <AutoresTable client:load />
+  </main>
+</Layout>
+
+<style>
+.autores-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+</style>
