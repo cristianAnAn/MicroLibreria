@@ -106,7 +106,7 @@ export default {
   methods: {
     async fetchAutores() {
       try {
-        const response = await axios.get('http://autoreslibros.somee.com/api/AutorLibro');
+        const response = await axios.get('https://autoreslibros.somee.com/api/AutorLibro');
         this.autores = response.data;
       } catch (err) {
         this.error = err.message || 'Error al cargar los autores';

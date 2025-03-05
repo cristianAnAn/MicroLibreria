@@ -100,8 +100,8 @@ export default {
     async fetchDatos() {
       try {
         const [librosResponse, autoresResponse] = await Promise.all([
-          axios.get('http://libreriamaterial.somee.com/api/LibroMaterial'),
-          axios.get('http://autoreslibros.somee.com/api/AutorLibro')
+          axios.get('https://libreriamaterial.somee.com/api/LibroMaterial'),
+          axios.get('https://autoreslibros.somee.com/api/AutorLibro')
         ]);
         
         this.libros = librosResponse.data;

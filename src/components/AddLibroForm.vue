@@ -98,7 +98,7 @@ export default {
     async fetchAutores() {
       this.loadingAutores = true;
       try {
-        const response = await axios.get('http://autoreslibros.somee.com/api/AutorLibro');
+        const response = await axios.get('https://autoreslibros.somee.com/api/AutorLibro');
         this.autores = response.data;
       } catch (error) {
         console.error('Error fetching autores:', error);
@@ -119,7 +119,7 @@ export default {
         };
 
         await axios.post(
-          'http://libreriamaterial.somee.com/api/LibroMaterial',
+          'https://libreriamaterial.somee.com/api/LibroMaterial',
           payload,
           {
             headers: {
